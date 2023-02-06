@@ -1,12 +1,3 @@
-<?php
-include './connection.php';
-
-$sq = "SELECT * FROM users";
-$result = mysqli_query($conn, $sq);
-
-$row = mysqli_num_rows($result);
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -35,8 +26,7 @@ $row = mysqli_num_rows($result);
         .main {
             width: 100vw;
             height: 100vh;
-            background-image: url(./images/image1.jpg);
-            background-size: cover;
+            background-color: blue;
             overflow: hidden;
         }
 
@@ -311,7 +301,7 @@ $row = mysqli_num_rows($result);
                 <a href="#gallary">Gallary</a>
                 <a href="#about">About</a>
                 <a href="#yourProfile">Profile</a>
-                <a style="user-select: none;">Current Users - <?php echo $row ?></a>
+                <a style="user-select: none;">Current Users - 00</a>
             </div>
             <div class="login">
                 <a href="#login">Log in</a>
@@ -324,7 +314,7 @@ $row = mysqli_num_rows($result);
                 <a href="#gallary">Gallary</a>
                 <a href="#about">About</a>
                 <a href="#yourProfile">Profile</a>
-                <a style="user-select: none;">Current Users - <?php echo $row ?></a>
+                <a style="user-select: none;">Current Users - 00 </a>
             </div>
             <div class="login2">
                 <a href="#login">Log in</a>
